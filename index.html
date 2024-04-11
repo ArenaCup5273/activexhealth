@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <!--DESCRIPCION GENERAL-->
+    <div class="containerPresentacion row w-sm-100">
+        <div class="col-xl-7 col-sm-12 colSaly">
+            <img class="saly1" src="assets/img/saly1.png" alt="">
+        </div>
+        <div class="col-xl-5 col-sm-12 colPresentacion">
+         <h1 class="presentacion tit">Proyecto ActiveX</h1>
+         <p class="text-white nombre">Zamudio Monroy Gael Armando 4IM8</p>
+         <p class="descripcion"><br>En ActiveX los usuarios podrán gestionar y obtener sus rutinas de ejercicio, dieta, y controlar su progreso. Se contará con un generador de rutinas de ejercicio personalizadas para los objetivos de cada usuario, así como un generador de dietas, igualmente automatizado.</p>
+         <div class="containerBtns">
+            <button class="btnEmpiezaAhora mt-5 py-4 px-5 mx-3" onclick="deslizar('containerPanelControl')">
+                Ver Panel de control
+            </button>
+            <button class="btnMasInfo btnRutinas py-4 px-5" onclick="deslizar('containerPanelRutinas')">
+                Ver Panel de rutinas
+            </button>
+            <button class="btnMasInfo mt-4 py-4 px-4 mx-3" style="width: 260px;"  onclick="deslizar('containerPanelObjetivos')">
+                Ver Panel de objetivos
+            </button>
+            <button class="btnEmpiezaAhora btnConfiguracion py-4 px-5" onclick="deslizar('containerConfig')">
+                Ver configuración
+            </button>
+        </div>
+        </div>     
+    </div>   
+    <!--PANEL DE CONTROL-->
+    <div class="containerPanelControl panel row" id="containerPanelControl">
+        <div class="col-xl-12 colPresentacion">
+         <h1 class="presentacion text-center">Panel de control</h1>
+        <div>
+            <img src="assets/img/panel.png" class="mt-5" alt="" style="width: 70%;margin: auto;display: block;border-radius: 10px;box-shadow: 10px 10px 30px rgba(60, 96, 97, 0.452);">
+        </div>
+        <div class="" style="margin: auto;display: block;">
+            <p class="descripcion mt-4 text-start" style="width: 70%;margin-left: 16%;">En este apartado el usuario podrá obtener una vista general de su día, la rutina que tiene que realizar, las comidas que tiene asignadas, así como un vistazo rápido de sus objetvos y su progreso en ellos. </p>
+        </div>
+        </div>     
+    </div> 
+    <!--PANEL DE RUTINAS-->  
+    <div class="containerPanelRutinas panel row w-sm-100" id="containerPanelRutinas">
+        <div class="col-xl-12 colPresentacion">
+         <h1 class="presentacion text-center">Panel de rutinas</h1>
+        <div>
+            <img src="assets/img/rutinas.png" class="mt-5" alt="" style="width: 70%;margin: auto;display: block;border-radius: 10px;box-shadow: 10px 10px 30px rgba(60, 96, 97, 0.452);">
+        </div>
+        <div class="" style="margin: auto;display: block;">
+            <p class="descripcion mt-4 text-start" style="width: 70%;margin-left: 16%;">Dentro de este panel el usuario encontrará información detallada sobre su plan de ejercicio. Podrá registrar sus entrenamientos y monitorear su progreso. </p>
+        </div>
+        </div>     
+    </div> 
+    <!--PANEL DE OBJETIVOS-->  
+    <div class="containerPanelObjetivos panel row w-sm-100" id="containerPanelObjetivos">
+        <div class="col-xl-12 colPresentacion">
+         <h1 class="presentacion text-center">Panel de objetivos</h1>
+        <div>
+            <img src="assets/img/objetivos.png" class="mt-5" alt="" style="width: 70%;margin: auto;display: block;border-radius: 10px;box-shadow: 10px 10px 30px rgba(60, 96, 97, 0.452);">
+        </div>
+        <div class="" style="margin: auto;display: block;">
+            <p class="descripcion mt-4 text-start" style="width: 70%;margin-left: 16%;">En esta sección el usuario controlará los objetivos que desea cumplir y podrá tener un registro de su progreso en estos.</p>
+        </div>
+        </div>     
+    </div> 
+    <!--CONFIGURACIÓN-->
+    <div class="containerConfig row w-sm-100 panel" id="containerConfig">
+        <div class="col-xl-12 colPresentacion">
+         <h1 class="presentacion1 text-center">Configuración</h1>
+        <div>
+            <img src="assets/img/configuracion.png" class="mt-5" alt="" style="width: 70%;margin: auto;display: block;border-radius: 10px;box-shadow: 10px 10px 30px rgba(60, 96, 97, 0.452);">
+        </div>
+        <div class="" style="margin: auto;display: block;">
+            <p class="descripcion mt-4 text-start" style="width: 70%;margin-left: 16%;">Dentro de este apartado el usuario podrá personalizar su experiencia en la página, seleccionando sus preferencias.</p>
+        </div>
+        </div>     
+    </div> 
+    <button class="boton-regresar" onclick="regresarInicio()"><img src="assets/img/top-arrow.png" alt=""></button>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
