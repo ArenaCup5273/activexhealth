@@ -2,6 +2,13 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Asegúrate de eliminar cualquier margen o relleno no deseado */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+
 .containerPresentacion {
     background-image: linear-gradient(to right, var(--morado-intermedio), rgb(87, 48, 150));
 }
@@ -24,10 +31,16 @@ body {
 
 .saly1 {
     padding-left: 12%;
+    margin-top: 17px;
+}
+.colPresentacion1 {
+    padding: 100px;
 }
 
 .colPresentacion {
-    padding-top: 100px;
+    padding: auto;
+    max-height: max-content;
+    max-width: max-content;
 }
 
 .presentacion {
