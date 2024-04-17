@@ -1,0 +1,166 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Asegúrate de eliminar cualquier margen o relleno no deseado */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+
+.containerPresentacion {
+    background-image: linear-gradient(to right, var(--morado-intermedio), rgb(87, 48, 150));
+}
+
+.containerPanelControl {
+    background-image: linear-gradient(to right, rgb(225, 158, 241), rgb(187, 76, 214));
+}
+
+.containerPanelRutinas {
+    background-image: linear-gradient(to right, rgb(225, 158, 241), rgb(187, 76, 214));
+}
+
+.containerPanelObjetivos {
+    background-image: linear-gradient(to left, rgb(200, 137, 241), rgb(147, 76, 214));
+}
+
+.containerConfig{
+    background-image: linear-gradient(to left, rgb(200, 137, 241), rgb(147, 76, 214));
+}
+
+.saly1 {
+    padding-left: 12%;
+    margin-top: 17px;
+}
+.colPresentacion1 {
+    padding: 100px;
+}
+
+.colPresentacion {
+    padding: 0;
+    max-height: max-content;
+    max-width: max-content;
+}
+
+.presentacion {
+    font-family: "Poppins", sans-serif; 
+    font-weight: bold;
+    font-size: 61px;
+    color: var(--blanco-primary);
+    width: 100%; /* Cambia el ancho fijo por uno relativo */
+    margin-top: -55px;
+}
+
+.presentacion1 {
+    font-family: "Poppins", sans-serif; 
+    font-weight: bold;
+    font-size: 61px;
+    color: var(--blanco-primary);
+    width: 100%; /* Cambia el ancho fijo por uno relativo */
+    margin-top: -55px;
+}
+
+.boton-regresar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2d87fd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.descripcion {
+    font-size: 25px;
+    color: var(--blanco-primary);
+    width: 80%;
+}
+
+
+.btnEmpiezaAhora {
+    border-radius: 20px;
+    color: white;
+    background-color: var(--morado-intermedio);
+    border: none;
+    font-size: 16px;
+    box-shadow:2px 3px 5px rgba(82, 82, 82, 0.377);
+}
+
+.primerPalabra {
+    color: rgb(166, 234, 249);
+}
+
+.btnMasInfo {
+        border-radius: 20px;
+        color: var(--morado-intermedio);
+        font-weight: 500;
+        background-color: var(--blanco-primary);
+        border: none;
+        font-size: 16px;
+        box-shadow:2px 3px 5px rgba(82, 82, 82, 0.377);
+}
+
+:root {
+    --azul: rgb(87, 183, 189);
+    --blanco-primary: rgb(248, 249, 255);
+    --morado-intermedio: rgb(148,119,231);
+}
+
+@media(max-width:1900px){
+    .colPresentacion1 {
+        padding: 0;
+    }
+    .saly1 {
+        display: none;
+    }
+
+    .presentacion {
+        margin: auto;
+    }
+
+    .presentacion1 {
+        margin: auto;
+        font-size: 45px;
+    }
+
+    .descripcion {
+        font-size: 25px;
+        color: var(--blanco-primary);
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .nombre {
+        margin-left: 10%;
+    }
+
+    .btnRutinas, .btnConfiguracion {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .btnConfiguracion {
+        width: 260px;
+        margin-bottom: 90px;
+    }
+    
+    .containerBtns {
+    margin-left: 10%;
+    }
+
+    .panel {
+        padding-bottom: 50px;
+    }
+
+    .tit {
+        margin-left: 10%;
+    }
+
+    .boton-regresar{
+        right: 50px;
+    }
+}
